@@ -29,7 +29,7 @@ def face_prediction(images, labels):
         if res == label:
             accuracy[i] = 1
         i += 1
-        print(f'actual {people[label]}, prediction {people[int(res)]}')
+        print(f'actual {people[label]}, prediction {people[int(res)]} with confidence of {confidence}')
     print(accuracy.mean()) 
     return accuracy.mean()
 
